@@ -47,7 +47,7 @@ body {
 }
 
 /* Media Queries for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .container {
     padding: 15px;
   }
@@ -68,7 +68,7 @@ body {
 }
 
 /* Hide the input color field on desktop */
-@media (min-width: 601px) {
+@media (min-width: 801px) {
   #color-picker {
     display: none;
   }
