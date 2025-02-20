@@ -1,4 +1,5 @@
 document.getElementById('color-preview').addEventListener('click', function() {
+  // Directly focus on the color input to trigger the color picker
   document.getElementById('color-picker').click();
 });
 
