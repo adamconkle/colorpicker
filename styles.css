@@ -20,7 +20,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  width: 100%;
+  max-width: 500px; /* Make sure the container is responsive */
 }
 
 #color-preview {
@@ -43,4 +44,32 @@ body {
 
 .hidden {
   display: none;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  #color-preview {
+    height: 150px;
+    width: 150px;
+  }
+
+  #color-code, #rgba-code {
+    font-size: 1.2em;
+  }
+
+  /* Show the input color field on mobile */
+  #color-picker {
+    display: block;
+  }
+}
+
+/* Hide the input color field on desktop */
+@media (min-width: 601px) {
+  #color-picker {
+    display: none;
+  }
 }
