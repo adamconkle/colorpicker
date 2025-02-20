@@ -64,6 +64,7 @@ body {
   /* Show the input color field on mobile */
   #color-picker {
     display: block;
+    margin: 20px auto;
   }
 }
 
