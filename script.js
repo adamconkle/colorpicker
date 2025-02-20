@@ -9,7 +9,7 @@ document.getElementById('color-picker').addEventListener('input', function(event
   const rgba = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 1)`;
 
   document.getElementById('color-preview').style.backgroundColor = hexColor;
-  document.getElementById('color-preview').style.boxShadow = `0 0 10px 5px ${rgba}`; // Box shadow changes color
+  document.getElementById('color-preview').style.boxShadow = `0 0 20px 5px ${rgba}`; // Box shadow changes color
   document.getElementById('color-code').textContent = `${hexColor}`;
   document.getElementById('rgba-code').textContent = `${rgba}`;
 });
